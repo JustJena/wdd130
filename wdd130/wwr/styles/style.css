@@ -1,12 +1,17 @@
 <body>
     <div id="content">
+        max-width: 1600px;
+        margin: 0 auto;
         <header>
-        <section class="rapids-card">
+        padding: 4em
+        font-size: 18px;
+        text-align: center;
+     <section class="rapids-card">
         <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
         <img class="icon" src="images/oars.png" alt="oars icon">
         <h2>Rapids</h2>
     </section>
-    <div id="background"></div> 
+<div id="background"></div> 
     <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
     <section class="msg">
         <h2>More Than Just The Thrill</h2>
@@ -20,9 +25,9 @@
         background-color:rgba(20,30,13, .7);
     }
     nav a:hover {
-        background-color: black;
+        background-color: #032A40;
     }nav a:hover {
-        background-color: black;
+        background-color: #032A40;
         color: #d9c2a3;
         .icon {
             width: 80px;
@@ -36,6 +41,9 @@
             font-size: 1.2em;
         }  footer p a:hover {
             text-decoration: underline;
-        }      
+        </footer>      
     </div>
 </body>
+    
+
+
