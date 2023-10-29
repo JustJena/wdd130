@@ -8,153 +8,209 @@
   justify-items: center;
   gap: 20px;
 }
-.red1 { 
-  width: 100%; 
-  height: 100px; 
+.red1 {
+  width: 100%;
+  height: 100px;
   background-color: red;
-  grid-column: 1/3; 
+  grid-column: 1/3;
+}
 
-} 
 .green1 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
+  width: 200px;
+  height: 200px;
+}
 
-} 
 .yellow1 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  width: 200px;
+  height: 200px;
+}
+
 .blue1 {
-  width: 100%; 
-  height: 100px; 
-  background-color: blue; 
-  grid-column: 1/3; 
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  grid-column: 1/3;
 } 
 /* Activity 2 styles */ 
 .content2 {
   /* This is the parent of the activity 2 boxes. */
+
+  display: grid;
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
 }
 .red2 {
-  width: 100%; 
-  height: 100%; 
-  background-color: red; 
-} 
-.green2 { 
-  width: 200px; 
-  height: 200px; 
-  background-color: green; 
-} 
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: -50px; /* Overlap by moving up 50px */
+    margin-left: 50px; /* Stagger by moving right 50px */
+}
+
+.green2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-top: -50px;
+    margin-right: 150px; /* Stagger by moving right 150px */
+}
+
 .yellow2 {
-  width: 200px; 
-  height: 200px; 
-  background-color: gold; 
-} 
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    margin-top: 0; /* No overlap */
+    margin-right: 100px; /* Stagger by moving right 100px */
+}
+
 .blue2 {
-  width: 100%; 
-  height: 100%; 
-  background-color: blue; 
-} 
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 0;
+    margin-left: 0; /* No stagger */
+}
 /* Activity 3 styles */ 
 .content3 {
   /* This is the parent of the activity 3 boxes. */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .red3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
+  width: 100%; /* Adjust the width as needed */
+  height: 100px; /* You can also adjust the height */
+  background-color: red;
+  grid-column: 1; /* Place in the first column */
+}
+
 .green3 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%;
+  height: 100px;
   background-color: green;
-} 
+  grid-column: 2; /* Place in the second column */
+}
+
 .yellow3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  /* Adjust width, height, and background-color as needed */
+  grid-column: 1 / span 2; /* Span both columns */
+}
+
 .blue3 {
-  width: 100px;
-  height: 100px; 
-  background-color: blue; 
+  /* Adjust width, height, and background-color as needed */
+  grid-column: 1; /* Place in the first column */
 } 
+
 /* Activity 4 styles */ 
 .content4 {
   /* This is the parent of the activity 4 boxes. */
   height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-rows: 1fr 1fr; /* 2 rows */
 }
 .red4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  background-color: red;
+  grid-column: 1; /* Place in the first column */
+  grid-row: 1; /* Place in the first row */
+}
+
 .green4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: green;
+  grid-column: 2; /* Place in the second column */
+  grid-row: 1; /* Place in the first row */
+}
+
 .yellow4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  background-color: gold;
+  grid-column: 1; /* Place in the first column */
+  grid-row: 2; /* Place in the second row */
+}
+
 .blue4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: blue;
+  grid-column: 2; /* Place in the second column */
+  grid-row: 2; /* Place in the second row */
 } 
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
   height: 400px;
 }
-.red5 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
-.green5 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
+.red5 {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  background-color: red;
+  float: left; /* Float to the left so text wraps around it */
+}
 
-} 
+.green5 {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  background-color: green;
+/* Width, height, and background-color adjusted above */
+  float: left; /* Float to the left so text wraps around it */
+}
+
 .yellow5 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  background-color: gold;
+}
 
-} 
 .blue5 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  background-color: blue;
+}
+
 /* Activity 6 styles */ 
 .content6 {
   /* This is the parent of the activity 6 boxes. */
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* Create 4 columns with 100px width each */
+  grid-template-rows: repeat(2, 100px); /* Create 2 rows with 100px height each */
 }
 .red6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  background-color: red;
+  grid-column: 1; /* Place in the first column */
+  grid-row: 1; /* Place in the first row */
+}
+
 .green6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
+  width: 200px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: green;
+  grid-column: 3; /* Place in the third column */
+  grid-row: 1; /* Place in the first row */
+}
+
 .yellow6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  width: 100px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  background-color: gold;
+  grid-column: 2; /* Place in the second column */
+  grid-row: 2; /* Place in the second row */
+}
+
 .blue6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: blue;
+  grid-column: 4; /* Place in the fourth column */
+  grid-row: 2; /* Place in the second row */
 } 
 
 
