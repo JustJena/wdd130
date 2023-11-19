@@ -1,134 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sriracha&display=swap');
+@import url("https://use.typekit.net/doq2kfg.css");
+@import url("https://use.typekit.net/doq2kfg.css");
 body {
-    background-color: #F2DCC2;
+    font-family: "raleway";
+    font-weight: 300;
+    font-style: normal;
     margin: 0;
+    padding: 0;
 }
-
 header {
-    background-color: #032A40;
-    display: grid;
-    grid-template-columns: 150px auto;
-    padding: 10px 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-}
-
-nav a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    color: #f2dcc2;
-    text-decoration: none;
+    font-family: "lindsey-signature", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
-#hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-
-#hero-box {
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
-
-#hero-msg {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 100px;
+.hero {
+  text-align: center;
 }
-
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+.hero img {
+  width: 100%;
+  height: auto;
 }
-
-.card-img {
-    border: 10px solid #d9c2a3;
-    transition: transform 0.5s;
-    box-shadow: 5px 5px 10px #6f7364;
+.other-images {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.bordered-image {
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin: 10px;
+}
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 15px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
-
-.card-img:hover {
-    opacity: 0.6;
-    transform: scale(1.1);
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
 }
-
-.mountains,
-.msg {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 5px 5px 10px #6f7364;
+.portfolio-images .bordered-image {
+  width: 30%;
+  margin: 10px;
 }
-
-footer {
-    background-color: #032A40;
-    color: #F2DCC2;
-    padding: 25px 50px;
-    margin-top: 200px;
+.faq {
+  padding: 20px;
+   font-weight: bold;
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+.question {
+  font-weight: bold;
+}
+.contact {
+  padding: 20px;
+}
+.portfolio-images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    margin-top: 20px;
 }
-
-@media screen and (max-width: 900px) {
-    #hero,
-    .home-grid {
-        display: block;
-        height: auto;
-    }
-
-    nav,
-    footer {
-        flex-direction: column;
-    }
-
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-
-    #hero,
-    #hero-msg {
-        margin-top: 0;
-    }
-
-    #hero-msg h4 {
-        display: none;
-    }
-
-    #hero-msg h1 {
-        color: #6f7364;
-    }
-
-    .home-title {
-        font-size: 25px;
-    }
-
-    .rivers-card,
-    .camping-card,
-    .rapids-card {
-        margin: 50px auto;
-        width: 60%;
-    }
-
-    #background {
-        display: none;
-    }
-
-    .mountains,
-    .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-
-    footer {
-        margin-top: 25px;
-    }
+.portfolio-images .bordered-image {
+    width: 30%;
+    margin: 10px;
 }
